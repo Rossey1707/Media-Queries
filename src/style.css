@@ -40,7 +40,7 @@ body {
 
 /* Hidden by default on desktop screens */
 .hamburger-icon {
-  display: none;
+  /*display: none;*/
   color: white;
   font-size: 2rem;
   cursor: pointer;
@@ -97,6 +97,7 @@ gap: 20px;
   text-shadow: 2px 2px 5px black;
   border-radius: 8px;
 }
+
 /* styling for tablet */
 @media screen and (max-width: 991px){
   .light-box{
@@ -112,4 +113,33 @@ gap: 20px;
     color: white;
   }
 }
+/*C2 styling for mobile*/
+.layout-wrapper{
+  flex-direction: column;
+}
+
+
+.hamburger-icon{
+  display: block;
+}
+
+.nav-links{
+  display: none;
+  background-color: #34495e;
+  position: absolute;
+  top: 50;
+  right: 0;
+  padding: 10px 0px;
+  width: 150px;
+} 
+
+.nav-links li{
+margin: 10px 0px;
+}
+
+.menu-container:hover .nav-links{
+  display: flex;
+  flex-direction: column;
+}
+  
 
